@@ -28,7 +28,7 @@ jobs:
       has-changes: ${{ steps.changes.outputs.has-changes }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 2
 
@@ -75,7 +75,7 @@ jobs:
       is-dependency-update: ${{ steps.check-deps.outputs.is-dependency-update }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 100
 
@@ -126,7 +126,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
